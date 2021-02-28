@@ -155,9 +155,9 @@ def benchmark():
     for t, label in zip(times, labels):
         plt.loglog(sizes, t, label=label)
     plt.legend()
-    plt.savefig("benchmark.png", dpi=300)
     plt.xlabel("Number of disjoint sets")
     plt.ylabel("Time [seconds]")
+    plt.savefig("benchmark.png", dpi=300)
     plt.show()
 
 def test():
